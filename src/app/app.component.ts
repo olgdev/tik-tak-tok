@@ -1,7 +1,9 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 import { ProfileCardComponent } from "./common-ui/profile-card/profile-card.component";
 import "normalize.css";
+import { ProfileService } from "./data/services/profile.service";
+import { Profile } from "./data/services/interfaces/profile.interface";
 
 @Component({
   selector: "app-root",
@@ -12,5 +14,12 @@ import "normalize.css";
   styleUrl: "./app.component.scss"
 })
 export class AppComponent {
-  title = "tik-tak-tok";
+  profileService = inject(ProfileService);
+  profiles: Profile[] = [];
+
+  constructor() {
+    this.profileService.getTestAccounts().subscribe(val => {
+      this.profiles = val;
+    });
+  }
 }
