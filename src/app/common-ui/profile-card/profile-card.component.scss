@@ -1,0 +1,32 @@
+.profile-card {
+  border: solid var(--light-color);
+  border-width: 1px;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+  align-items: center;
+  &__avatar {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 71px 1fr;
+    // justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 71px;
+    height: 71px;
+    // grid-area: image;
+  }
+  &__name {
+    display: block;
+    // grid-area: name;
+
+  }
+  &__nickname {
+    display: block;
+    // grid-area: nickname;
+  }
+}

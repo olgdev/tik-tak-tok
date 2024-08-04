@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import "fonts";
+
+:root {
+  --dark-color: #000;
+  --light-color: #fff;
+  --primary-color: #ae7aff;
+  --border-radius: 2px;
+}
+
+body {
+  font-family: "JetBrainsMono", Verdana, sans-serif;
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.skill-tags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 4px;
+}
+
+.skill-tag {
+  border-radius: var(--border-radius);
+  border: solid var(--light-color);
+  border-width: 1px;
+  padding: 4px 8px;
+  font-style: 12px;
+  font-weight: 700;
+}
+
+.btn {
+  border: none;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  padding: 10px 20px;
+  font-weight: 700;
+  font-style: 14px;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-style: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-style: 14px;
+  line-height: 1.2;
+
+}
