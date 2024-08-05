@@ -5,10 +5,11 @@
   --light-color: #fff;
   --primary-color: #ae7aff;
   --border-radius: 2px;
+  --base-font-family: "JetBrainsMono", Verdana, sans-serif;
 }
 
 body {
-  font-family: "JetBrainsMono", Verdana, sans-serif;
+  font: 12px/1.2 var(--base-font-family);
   background: var(--dark-color);
   color: var(--light-color);
 }
