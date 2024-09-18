@@ -1,0 +1,33 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100dvh;
+  align-items: center;
+  padding: 5%;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.form-label {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 8px;
+  display: block;
+  border-width: 1px;
+  border: solid var(--light-color);
+  border-radius: var(--border-radius);
+  padding: 12px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--dark-color);
+  color: var(--light-color);
+}
